@@ -4,9 +4,9 @@
 AUUID=bc1a962f-ed64-4d3c-b699-58cf0ccb975e
 CADDYIndexPage=https://github.com/AYJCSGM/mikutap/archive/master.zip
 CONFIGCADDY=https://raw.githubusercontent.com/1ybwh1/railway/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/1ybwh1/railwaymaster/etc/xray.json
+CONFIGXRAY=https://raw.githubusercontent.com/1ybwh1/railway/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/1ybwh1/railwaymaster/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/1ybwh1/railway/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
